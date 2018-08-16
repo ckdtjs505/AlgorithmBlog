@@ -16,16 +16,17 @@
         color: black;
         text-decoration: none;
       }
+
       h1 {
         border-bottom: 1px solid gray;
         display: block ;
         font-size: 40px;
         text-align: center;
-        margin: 0px;
+        margin: 0;
         padding: 40px;
       }
       body {
-          width: 924px;
+
       }
       ol{
         width: 100px;
@@ -34,24 +35,31 @@
       }
       #grid{
         display: grid;
-        grid-template-columns: 6fr;
+        grid-template-columns: 1fr 5fr;
+      }
+      #grid ol{
+        padding-left: 33px;
+        height: 500px;
       }
       #display1{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
       }
       #list {
         border-right: 1px solid gray;
       }
       #menu {
+
         display:grid;
         grid-template-columns: 100px 100px 100px ;
         border-bottom: 1px solid gray;
         text-align: center;
         padding: 5px;
+
       }
       #allbody{
+
         width: 1000px;
+
       }
     </style>
   </head>
@@ -63,16 +71,15 @@
         <div><a href="2_training.html">Training</a></div>
     </div>
     <div id="grid">
+      <div id = "list">
+        <ol>
+          <li><a href="1.html">입출력하기</a></li>
+          <!-- <li><a href="2.html">숫자찾기</a></li>
+          <li><a href="3.html">수열찾기</a></li> -->
+        </ol>
+      </div>
       <div id =display1>
-        <h2>About site</h2>
-        <p>이 사이트는 알고리즘 트레이닝 사이트입니다. 저 또한 알고리즘 공부에서 너무 힘들었기 때문에 이 사이트를 만들게 되었습니다. 많은분들이 어려워 하고 힘들어하는 알고리즘 공부를 함께 해결해 나가고자 합니다.</p>
-        <h2>Tutorial</h2>
-        <p>하루에 한 문제씩 문제를 해결하면 됩니다.</p>
-        <h2>Personal</h2>
-        <p> name  : 오창선 <br>
-            Email : ckdtjs505@naver.com <br>
-            Phone : 010-9771-5945 <br>
-            Blog  : <a href="https://blog.naver.com/ckdtjs505">blog.naver.com/ckdtjs505</a></p>
+        <h2>Training</h2>
       </div>
     </div>
   </body>
