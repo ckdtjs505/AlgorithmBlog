@@ -1,27 +1,87 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html>
-<body>
+  </table>
+  <head>
+    <title>CS_file</title>
+    <meta charset="utf-8">
+    <style>
+      html{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      h1 {
+        border-bottom: 1px solid gray;
+        display: block ;
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
+        padding: 40px;
+      }
+      body {
+      }
+      ol{
+        width: 100px;
+        margin: 0;
+        padding: 20px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+      }
+      #grid ol{
+        padding-left: 33px;
+        height: 500px;
+      }
+      #display1{
+        padding-left: 15px;
+      }
+      #list {
+        border-right: 1px solid gray;
+      }
+      #menu {
+        display:grid;
+        grid-template-columns: 100px 100px 100px ;
+        border-bottom: 1px solid gray;
+        text-align: center;
+        padding: 5px;
+      }
+      #allbody{
+        width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="index.html">Algorithm training</a></h1>
+    <div id = "menu">
+        <div><a href="index.html">Main</a></div>
+        <div><a href="1_algorithm.html">Algorithm</a></div>
+        <div><a href="2_training.html">Training</a></div>
+    </div>
+    <div id="grid">
+      <div id = "list">
+        <ol>
+          <li><a href="1.html">알고리즘?</a></li>
+          <!-- <li><a href="2.html">변수와 배열</a></li>
+          <li><a href="3.html">자료구조</a></li> -->
+        </ol>
+      </div>
+      <div id =display1>
+        <h2>Algorithm</h2>
+        <p>다양한 알고리즘을 이해하고 있으면 <br>
+        컴퓨터에서 동작하게 프로그램을 우하하게 작성할 수 있습니다.<br>
+        효울적이고 정확하게 문제를 해결하는 프로그램을 작성하기 위해, <br>
+        알고리즘이란 무엇인지 학습해 보도록 하겠습니다.
 
-<img id="scream" src="test.jpg" alt="The Scream" width="220" height="277" >
-<canvas id="myCanvas" width="220" height="277" style="border:1px solid #d3d3d3;">
-
-<script>
-document.getElementById("scream").onload = function() {
-    var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
-    var img = document.getElementById("scream");
-    ctx.drawImage(img, 0, 0);
-    var imgData = ctx.getImageData(0, 0, c.width, c.height);
-    // invert colors
-    var i;
-    for (i = 0; i < imgData.data.length; i += 4) {
-        imgData.data[i] = 255 - imgData.data[i];   // 픽셀의 레드 값
-        imgData.data[i+1] = 255 - imgData.data[i+1]; // 그린
-        imgData.data[i+2] = 255 - imgData.data[i+2]; // 블루
-        imgData.data[i+3] = 255;                                 // 알파
-    }
-    ctx.putImageData(imgData, 0, 0);
-};
-</script>
-</body>
+      </p>
+      </div>
+    </div>
+  </body>
 </html>
